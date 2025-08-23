@@ -18,4 +18,36 @@ public class player {
         return fullName;
     }
 
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getCurrentLevel() {
+        return currentLevel;
+    }
+
+    public void setCurrentLevel(String currentLevel) {
+        this.currentLevel = currentLevel;
+    }
+
+    public String getCourseOfStudy() {
+        return courseOfStudy;
+    }
+
+    public void setCourseOfStudy(String courseOfStudy) {
+        this.courseOfStudy = courseOfStudy;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    @Override
+    public String toString() {
+        return fullName + "(" + position + "," + courseOfStudy + "," + currentLevel + ")";
+    }
 }
