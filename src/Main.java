@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
-
 import service.TeamService;
+import model.Player;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,7 +41,7 @@ public class Main {
                     System.out.print("Full Name: ");
                     String fullName = scanner.nextLine();
                     System.out.print("Current Level (100L, 200L):");
-                    String level = scaner.nextLine();
+                    String level = scanner.nextLine();
                     System.out.print("Course of Study: ");
                     String course = scanner.nextLine();
                     System.out.print("Position: ");
@@ -53,15 +53,15 @@ public class Main {
 
                 case 5 -> {
                     System.out.print("Enter team name: ");
-                    String teamName = scanner.NextLine();
-                    teamService.listPlayersInTeam(teamName);
+                    String teamName = scanner.nextLine();
+                    teamService.listPLayersInTeam(teamName);
                 }
                 case 6 -> {
                     System.out.print("Enter team name: ");
                     String teamName = scanner.nextLine();
                     System.out.print("Enter player name to remove: ");
                     String playerName = scanner.nextLine();
-                    teamService.removePlayerFromTeam(teaName, playerName);
+                    teamService.removePlayerFromTeam(teamName, playerName);
                 }
                 case 0 -> {
                     System.out.println("Exiting....");

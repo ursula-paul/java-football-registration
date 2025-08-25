@@ -1,3 +1,7 @@
+package model;
+
+import model.Player;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +27,7 @@ public class Team {
             return players.add(player);
 
         }else{
-            System.out.println("Team already has 8 players. Cannot add more")
+            System.out.println("Team already has 8 players. Cannot add more");
             return false;
         }
     }

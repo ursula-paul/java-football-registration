@@ -1,3 +1,7 @@
+package service;
+
+import model.Team;
+import model.Player;
 import java.text.MessageFormat;
 import java.util.*;
 
@@ -6,7 +10,7 @@ public class TeamService {
 
     //Create Team
     public void createTeam(String name){
-        if (teams.containskey(name)){
+        if (teams.containsKey(name)){
             System.out.println("Team  with this name already exists.");
 
         }else{
@@ -52,7 +56,7 @@ public class TeamService {
         Team team = teams.get(teamName);
         if (team !=null){
             if (team.removePlayer(playerName)){
-                System.outprintln("Player removed from " + teamName);
+                System.out.println("Player removed from " + teamName);
             }else{
                 System.out.println("Player not found in " + teamName);
             }
