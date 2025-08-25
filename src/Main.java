@@ -36,7 +36,7 @@ public class Main {
                 }
 
                 case 4 -> {
-                    System.out.print("Enter team name");
+                    System.out.print("Enter team name: ");
                     String teamName = scanner.nextLine();
                     System.out.print("Full Name: ");
                     String fullName = scanner.nextLine();
