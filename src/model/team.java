@@ -2,12 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Team {
+
+    Team(){
+        
+    }
     private String name;
     private List<Player> players;
 
     public Team(String name) {
         this.name = name;
-        this.players =  new ArrayList<>();
+        this.players = new ArrayList<>();
     }
 
     public String getName() {
@@ -18,11 +22,11 @@ public class Team {
         return players;
     }
 
-    public boolean addPlayer(Player player){
-        if (players.size()<8){
+    public boolean addPlayer(Player player) {
+        if (players.size() < 8) {
             return players.add(player);
 
-        }else{
+        } else {
             System.out.println("Team already has 8 players. cannot add more");
             return false;
         }
